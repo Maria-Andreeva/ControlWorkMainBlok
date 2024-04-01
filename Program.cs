@@ -19,3 +19,6 @@ for (int i = 0; i < arr.Length; i++)
     Console.Write($"Enter element {i+1}: ");
     arr[i] = Console.ReadLine()!;
 }
+
+string output = String.Join(", ", arr.Where(el => el.Length <= 3));
+Console.WriteLine("[" + output + "]");
