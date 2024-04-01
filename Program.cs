@@ -12,3 +12,10 @@ if(!int.TryParse(Console.ReadLine(), out elementsCount))
     return;
 }
 
+string[] arr = new string[elementsCount];
+
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.Write($"Enter element {i+1}: ");
+    arr[i] = Console.ReadLine()!;
+}
